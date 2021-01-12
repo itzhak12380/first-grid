@@ -29,7 +29,7 @@ main{
     grid-area: sidebar;
 }
 #content1{
-    background-image: url(./photos/hotel1.jpeg);
+    background-image: url(photos/hotel1.jpeg);
     background-size:contain;
     grid-area: content1;
     animation-name: itzhak12;

@@ -45,7 +45,7 @@ main{
     grid-area: content2;
 }
 #content3{
-    /* background-image: url(./photos/hotel1.jpeg); */
+    
     background-size:contain;
     grid-area: content3;
     animation-name: itzhak1;
@@ -77,25 +77,25 @@ footer{
 
 @keyframes itzhak1{
     0%{
-        background-image: url(./photos/hotel2.jpeg);
+        background-image: url(photos/hotel2.jpeg);
     }
     66%{
-        background-image: url(./photos/hotel3.jpeg);
+        background-image: url(photos/hotel3.jpeg);
     }
     100%{
-        background-image: url(./photos/hotel\ 5.jpg);
+        background-image: url(photos/hotel\ 5.jpg);
     }
 }
 
 @keyframes itzhak12{
     0%{
-        background-image: url(./photos/hotel\ 5.jpg);
+        background-image: url(photos/hotel\ 5.jpg);
     }
     66%{
-        background-image: url(./photos/hotel\ 6.jpg);
+        background-image: url(photos/hotel\ 6.jpg);
     }
     100%{
-        background-image: url(./photos/hotel\ 7.jpg);
+        background-image: url(photos/hotel\ 7.jpg);
     }
 }
 

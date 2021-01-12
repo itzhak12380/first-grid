@@ -1,0 +1,124 @@
+
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 2fr 1fr  ;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr ;
+    grid-template-areas:
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer"
+    ;
+    grid-gap: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: 500;
+}
+nav{
+    background-color: rgb(60, 200, 224);
+    grid-area: nav;
+}
+main{
+    background-color: rgb(19, 152, 185);
+    grid-area: main;
+}
+#sidebar{
+    background-color: rgb(19, 152, 185);
+    grid-area: sidebar;
+}
+#content1{
+    background-image: url(./photos/hotel1.jpeg);
+    background-size:contain;
+    grid-area: content1;
+    animation-name: itzhak12;
+    transition: all ease-in-out;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+#content2{
+    background-color:rgb(19, 152, 185);
+    
+    grid-area: content2;
+}
+#content3{
+    /* background-image: url(./photos/hotel1.jpeg); */
+    background-size:contain;
+    grid-area: content3;
+    animation-name: itzhak1;
+    transition: all ease-in-out;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+footer{
+    background-color:rgb(19, 152, 185);
+    grid-area: footer;
+}
+
+@media only screen and (max-width:550px){
+    .container{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 0.6fr 0.6fr 1fr 0.6fr 0.6fr 0.6fr 0.4fr;
+        grid-template-areas: 
+        "nav"
+        "sidebar"
+        "main"
+        "content1"
+        "content2"
+        "content3"
+        "footer";
+
+    }
+}
+
+@keyframes itzhak1{
+    0%{
+        background-image: url(./photos/hotel2.jpeg);
+    }
+    66%{
+        background-image: url(./photos/hotel3.jpeg);
+    }
+    100%{
+        background-image: url(./photos/hotel\ 5.jpg);
+    }
+}
+
+@keyframes itzhak12{
+    0%{
+        background-image: url(./photos/hotel\ 5.jpg);
+    }
+    66%{
+        background-image: url(./photos/hotel\ 6.jpg);
+    }
+    100%{
+        background-image: url(./photos/hotel\ 7.jpg);
+    }
+}
+
+.newp{
+    text-align-last: left;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul{
+    list-style: square;
+}
+li{
+    float: left;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+a:hover{
+    border-bottom: whitesmoke 1px solid;
+}
